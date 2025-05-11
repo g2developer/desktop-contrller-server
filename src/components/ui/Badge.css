@@ -1,0 +1,54 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: var(--font-caption);
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.badge-success {
+  background-color: rgba(0, 200, 150, 0.15);
+  color: var(--color-success);
+  border: 1px solid rgba(0, 200, 150, 0.3);
+}
+
+.badge-warning {
+  background-color: rgba(255, 184, 0, 0.15);
+  color: var(--color-warning);
+  border: 1px solid rgba(255, 184, 0, 0.3);
+}
+
+.badge-error {
+  background-color: rgba(255, 77, 77, 0.15);
+  color: var(--color-error);
+  border: 1px solid rgba(255, 77, 77, 0.3);
+}
+
+.badge-info {
+  background-color: rgba(0, 136, 255, 0.15);
+  color: var(--color-info);
+  border: 1px solid rgba(0, 136, 255, 0.3);
+}
+
+.badge-neutral {
+  background-color: rgba(170, 170, 170, 0.15);
+  color: var(--text-secondary);
+  border: 1px solid rgba(170, 170, 170, 0.3);
+}
+
+/* Size variants */
+.badge-sm {
+  padding: 2px 6px;
+  font-size: 10px;
+  border-radius: 10px;
+}
+
+.badge-lg {
+  padding: 6px 10px;
+  font-size: var(--font-body-small);
+  border-radius: 14px;
+}

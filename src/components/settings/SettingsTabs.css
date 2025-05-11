@@ -1,0 +1,35 @@
+.settings-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border-dark);
+  margin-bottom: var(--spacing-lg);
+}
+
+.settings-tab {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  position: relative;
+  font-size: var(--font-body);
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.settings-tab:hover {
+  color: var(--text-primary);
+}
+
+.settings-tab.active {
+  color: var(--color-primary);
+}
+
+.settings-tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--color-primary);
+}

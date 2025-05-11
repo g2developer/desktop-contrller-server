@@ -1,0 +1,86 @@
+.user-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-size: var(--font-body-small);
+  font-weight: 500;
+  margin-bottom: var(--spacing-xs);
+  color: var(--text-secondary);
+}
+
+.optional-label {
+  font-size: var(--font-caption);
+  font-weight: normal;
+  color: var(--text-disabled);
+  margin-left: var(--spacing-xs);
+}
+
+.form-input {
+  background-color: var(--surface-dark);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-sm);
+  color: var(--text-primary);
+  font-size: var(--font-body);
+  transition: all var(--transition-fast);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(0, 185, 174, 0.2);
+}
+
+.form-input::placeholder {
+  color: var(--text-disabled);
+}
+
+.form-input-error {
+  border-color: var(--color-error);
+}
+
+.form-input-error:focus {
+  border-color: var(--color-error);
+  box-shadow: 0 0 0 2px rgba(255, 77, 77, 0.2);
+}
+
+.form-error {
+  color: var(--color-error);
+  font-size: var(--font-caption);
+  margin-top: var(--spacing-xs);
+}
+
+.form-radio-group {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.form-radio {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.form-radio input {
+  margin-right: var(--spacing-xs);
+}
+
+.radio-label {
+  font-size: var(--font-body);
+  color: var(--text-primary);
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}

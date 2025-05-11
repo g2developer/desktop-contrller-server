@@ -1,0 +1,75 @@
+.client-list-tabs {
+  display: flex;
+  margin-bottom: var(--spacing-md);
+  border-bottom: 1px solid var(--border-dark);
+}
+
+.client-list-tab {
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  position: relative;
+  font-size: var(--font-body);
+}
+
+.client-list-tab:hover {
+  color: var(--text-primary);
+}
+
+.client-list-tab.active {
+  color: var(--color-primary);
+}
+
+.client-list-tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--color-primary);
+}
+
+.client-list-table-container {
+  overflow-x: auto;
+}
+
+.client-list-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--font-body-small);
+}
+
+.client-list-table thead {
+  background-color: var(--surface-dark-elevated);
+}
+
+.client-list-table th {
+  padding: var(--spacing-sm) var(--spacing-md);
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-dark);
+}
+
+.client-list-table td {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-bottom: 1px solid var(--border-dark);
+}
+
+.client-list-table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+.client-actions {
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+.client-list-empty {
+  padding: var(--spacing-md);
+  text-align: center;
+  color: var(--text-secondary);
+}

@@ -1,0 +1,56 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.dashboard-header {
+  margin-bottom: var(--spacing-lg);
+}
+
+.dashboard-subtitle {
+  color: var(--text-secondary);
+  margin-top: var(--spacing-xs);
+}
+
+.dashboard-status-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.status-card-item {
+  height: 100%;
+}
+
+.dashboard-main-content {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: var(--spacing-md);
+  flex-grow: 1;
+  min-height: 400px;
+}
+
+.dashboard-clients, .dashboard-logs {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 반응형 레이아웃 */
+@media (max-width: 991px) {
+  .dashboard-status-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .dashboard-main-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .dashboard-status-cards {
+    grid-template-columns: 1fr;
+  }
+}

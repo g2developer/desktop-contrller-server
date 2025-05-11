@@ -1,0 +1,80 @@
+.status-card {
+  height: 100%;
+}
+
+.status-card-title {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.status-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+.status-success {
+  background-color: rgba(0, 200, 150, 0.15);
+  color: var(--color-success);
+}
+
+.status-warning {
+  background-color: rgba(255, 184, 0, 0.15);
+  color: var(--color-warning);
+}
+
+.status-error {
+  background-color: rgba(255, 77, 77, 0.15);
+  color: var(--color-error);
+}
+
+.status-neutral {
+  background-color: rgba(170, 170, 170, 0.15);
+  color: var(--text-secondary);
+}
+
+.status-card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.status-metric {
+  font-size: var(--font-h2);
+  font-weight: 700;
+  margin-bottom: var(--spacing-xs);
+}
+
+.status-label {
+  font-size: var(--font-body-small);
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-md);
+}
+
+.status-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  margin-top: auto;
+}
+
+.status-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-body-small);
+}
+
+.status-detail-label {
+  color: var(--text-secondary);
+}
+
+.status-detail-value {
+  color: var(--text-primary);
+  font-weight: 500;
+}

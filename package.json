@@ -1,0 +1,82 @@
+{
+  "name": "desktop-controller-server",
+  "version": "1.0.0",
+  "description": "Desktop Controller Server Application",
+  "main": "public/electron.js",
+  "homepage": "./",
+  "author": "Your Name",
+  "private": true,
+  "dependencies": {
+    "electron-is-dev": "^2.0.0",
+    "electron-store": "^8.1.0",
+    "express": "^4.18.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "robotjs": "^0.6.0", 
+    "screenshot-desktop": "^1.15.0",
+    "socket.io": "^4.6.1",
+    "socket.io-client": "^4.6.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1",
+    "cross-env": "^7.0.3",
+    "electron": "^23.2.0",
+    "electron-builder": "^23.6.0",
+    "react-scripts": "^5.0.1",
+    "wait-on": "^7.0.1"
+  },
+  "scripts": {
+    "start": "set PORT=3001 && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "electron-dev": "concurrently \"set PORT=3001 && cross-env BROWSER=none npm start\" \"wait-on http://localhost:3001 && electron .\"",
+    "electron-pack": "npm run build && electron-builder build --win --mac --linux",
+    "postinstall": "electron-builder install-app-deps",
+    "preelectron-pack": "npm run build",
+    "server": "node server/index.js"
+  },
+  "build": {
+    "appId": "com.desktop.controller.server",
+    "productName": "Desktop Controller Server",
+    "files": [
+      "build/**/*",
+      "node_modules/**/*",
+      "public/electron.js",
+      "server/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "build/icon.icns"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "build/icon.png"
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

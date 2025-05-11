@@ -1,0 +1,65 @@
+.command-stats-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.command-distribution {
+  margin-top: var(--spacing-md);
+}
+
+.distribution-label {
+  font-size: var(--font-body-small);
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.distribution-bars {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.distribution-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.distribution-type {
+  width: 40px;
+  font-size: var(--font-caption);
+  color: var(--text-secondary);
+}
+
+.distribution-bar-container {
+  flex-grow: 1;
+  height: 8px;
+  background-color: var(--surface-dark-elevated);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.distribution-bar {
+  height: 100%;
+  border-radius: 4px;
+}
+
+.distribution-bar-text {
+  background-color: var(--color-primary);
+}
+
+.distribution-bar-image {
+  background-color: var(--color-success);
+}
+
+.distribution-bar-data {
+  background-color: var(--color-info);
+}
+
+.distribution-count {
+  width: 30px;
+  font-size: var(--font-caption);
+  color: var(--text-primary);
+  text-align: right;
+}

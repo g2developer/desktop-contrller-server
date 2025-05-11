@@ -1,0 +1,13 @@
+.server-status-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.server-status-controls {
+  margin-top: var(--spacing-md);
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+/* 그 외 스타일은 StatusCard.css에서 정의된 클래스를 사용 */

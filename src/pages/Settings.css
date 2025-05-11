@@ -1,0 +1,35 @@
+.settings-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.settings-header {
+  margin-bottom: var(--spacing-lg);
+}
+
+.settings-subtitle {
+  color: var(--text-secondary);
+  margin-top: var(--spacing-xs);
+}
+
+.settings-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-panel {
+  margin-top: var(--spacing-md);
+}
+
+/* 반응형 조정 */
+@media (max-width: 767px) {
+  .settings-tabs {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .settings-tab {
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+}

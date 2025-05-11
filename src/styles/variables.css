@@ -1,0 +1,61 @@
+:root {
+  /* 색상 */
+  --color-primary: #00B9AE;
+  --color-primary-light: #33CABE;
+  --color-primary-dark: #008F87;
+  
+  --color-success: #00C896;
+  --color-warning: #FFB800;
+  --color-error: #FF4D4D;
+  --color-info: #0088FF;
+  --color-offline: #888888;
+  
+  /* 배경색 - 다크 테마 */
+  --background-dark: #121212;
+  --surface-dark: #1E1E1E;
+  --surface-dark-elevated: #2C2C2C;
+  --border-dark: #333333;
+  
+  /* 텍스트 색상 - 다크 테마 */
+  --text-primary: #FFFFFF;
+  --text-secondary: #AAAAAA;
+  --text-disabled: #666666;
+  
+  /* 타이포그래피 */
+  --font-h1: 24px;
+  --font-h2: 20px;
+  --font-h3: 18px;
+  --font-h4: 16px;
+  --font-h5: 14px;
+  --font-body-large: 16px;
+  --font-body: 14px;
+  --font-body-small: 13px;
+  --font-caption: 12px;
+  
+  /* 행간 */
+  --line-height-heading: 1.2;
+  --line-height-body: 1.5;
+  
+  /* 스페이싱 */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  
+  /* 그림자 */
+  --shadow-low: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.15);
+  --shadow-high: 0 10px 20px rgba(0, 0, 0, 0.2);
+  
+  /* 애니메이션 */
+  --transition-fast: 100ms ease-out;
+  --transition-normal: 200ms ease-in-out;
+  --transition-slow: 300ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  
+  /* 레이아웃 */
+  --sidebar-width: 240px;
+  --header-height: 64px;
+  --footer-height: 48px;
+  --border-radius: 6px;
+}
